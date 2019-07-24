@@ -1,12 +1,14 @@
+// a retake on fizzBuzz;
+// conditions consider each digit of the number;
+// all elements of the output array are strings ie. 13 === 1fizz;
+
 const fizzBuzz = (num, Nums, Strs) => {
   let returnArr = [];
   let checkObj = {};
-
   for (let x = 0; x < Nums.length; x++) {
     let checkObjStr = Nums[x].toString();
     checkObj[checkObjStr] = Strs[x];
   }
-  
   for (let i = 1; i <= num; i++ ) {
     let checkStr = i.toString();
     let output = '';
@@ -26,13 +28,13 @@ const fizzBuzz = (num, Nums, Strs) => {
         break;
       }
     }
-
     if ( output === '') {
       returnArr.push (i.toString())
     } else {
       returnArr.push (output);
     }
   }
-  
   return returnArr;
 }
+
+console.log (fizzBuzz(100, [3, 5, 7], ['three', 'five', 'seven']));
