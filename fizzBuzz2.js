@@ -1,4 +1,4 @@
-// a retake on fizzBuzz;
+// a retake on fizzBuzz
 // conditions consider each digit of the number;
 // all elements of the output array are strings ie. 13 === 1fizz;
 
